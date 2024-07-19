@@ -1,0 +1,140 @@
+.welcome
+{
+    text-align: center;
+    margin: 80px auto;
+}
+.tbl
+{
+    width: 85%;
+}
+h{
+    font-size: 18px;
+    font-family: Rights;
+}
+.addbtn
+{
+    width:140px;
+    font-size:15px ;
+}
+.mytable
+{
+    font-size: 18px;
+    text-align: center;
+    padding: 60px 20px;
+
+
+
+}
+.mybtn
+{
+    margin: 2px auto;
+    width: 100px;
+    font-size:15px ;
+}
+.contents
+{
+    font-size: 20px;
+    max-width: 100px;
+    word-wrap: break-word;
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+    .welcome
+    {
+        text-align: center;
+        margin: 80px auto;
+    }
+    .tbl
+    {
+        width: 85%;
+    }
+    h{
+        font-size: 18px;
+        font-family: Rights;
+    }
+    .addbtn
+    {
+        width:140px;
+        font-size:15px ;
+    }
+    .mytable
+    {
+        font-size: 15px;
+        text-align: center;
+        padding: 60px 20px;
+
+
+
+    }
+    .mybtn
+    {
+        margin: 2px auto;
+        width: 60px;
+        font-size:10px ;
+    }
+    .contents
+    {
+        font-size: 18px;
+        max-width: 100px;
+        word-wrap: break-word;
+
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .welcome
+    {
+        text-align: center;
+        margin: 40px auto;
+    }
+    h{
+        font-size: 15px;
+        font-family: Rights;
+    }
+    .tbl
+    {
+        width: 20%;
+    }
+    .addbtn
+    {
+        width:120px;
+        font-size:10px ;
+    }
+    .mytable
+    {
+        font-size: 8px;
+        text-align: center;
+        padding: 60px 20px;
+
+
+
+    }
+    .mybtn
+    {
+        margin: 2px auto;
+        width: 45px;
+        font-size:5px ;
+    }
+    .contents
+    {
+        font-size: 11px;
+        max-width: 40px;
+
+        word-wrap: break-word;
+
+    }
+}
+

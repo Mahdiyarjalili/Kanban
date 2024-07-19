@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAN BAN pro</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/index.css}">
+    <link rel="stylesheet" th:href="@{/aboutus.css}">
+
+</head>
+<body>
+
+<div class="mynavbar">
+    <a th:href="@{/}">HOME</a>
+
+    <a th:href="@{aboutus}">ABOUT US</a>
+
+    <div class="mydropdown">
+        <button class="mydropbtn">PROJECTS
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="mydropdown-content">
+            <a th:href="@{projects/kanban}">KAN BAN pro</a>
+            <a th:href="@{projects/typepro}">TYPE PRO</a>
+            <a th:href="@{projects/pingpong}">PING PONG</a>
+        </div>
+    </div>
+
+    <a th:href="@{contact}">CONTACT US</a>
+
+
+    <div class="mydropdown">
+        <button class="mydropbtn">ACCOUNT
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="mydropdown-content">
+            <a sec:authorize="!isAuthenticated" th:href="@{userlogs/registration}">CREATE ACCOUNT</a>
+            <a sec:authorize="!isAuthenticated" th:href="@{userlogs/login}">LOGIN</a>
+            <a sec:authorize="isAuthenticated" th:href="@{/myprofile}">MY PROFILE</a>
+            <a sec:authorize="isAuthenticated" th:href="@{/logaut}">LOGOUT</a>
+        </div>
+    </div>
+</div>
+
+
+
+<h1>I would like to tell you a little about myself.</h1><br>
+
+<h2>I am a full stack software developer and web designer
+    and I have always been interested in it since I was in school,
+    so in 2014 I won 3. place at the 32. Provincial Competition.<br><br>
+
+    Since then I have written various projects such as Windows applications and games,
+    which are presented to you on this website.
+    <br>I am currently studying computer science and am active in the area of software
+    development and web design.<br><br> Now I am moving towards web software development
+    (web application), where I deal with technologies such as web servers,
+    databases and various frameworks.
+
+    <br><br><br><br><br>If you have any further questions you can reach me by clicking Contact above.
+    You can also send us your opinions, they are welcome.
+    I look forward to it.
+    <br><br></h2>
+
+
+
+<h3><br>If you have any questions or opinions, you can click Contact Us and
+    reach out to us</p>
+
+    We warmly welcome your ideas and opinions <br></h3>
+<h4><br>Mahdiyar Jalili<br>Founder of MJ VISION</h4>
+
+
+
+<div class="footerContainer" style="margin-left: 0; margin-right: 0;bottom: 0px;margin-bottom: 0;padding-bottom: 0">
+    <footer class="footer">
+        <a th:href="@{contact}"> CONTACT</a>
+        <a th:href="@{/}"> PROJECTS</a>
+        <a th:href="@{impressum}"> IMPRESSUM</a>
+        <p class="rights">Copyright © 2024 MJ VISION all rights reserved.</p>
+    </footer>
+</div>
+</body>
+</html>

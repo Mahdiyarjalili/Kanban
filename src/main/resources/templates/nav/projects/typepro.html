@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ VISION</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/index.css}">
+    <link rel="stylesheet" th:href="@{/typepro.css}">
+
+</head>
+<body>
+
+<div class="mynavbar">
+    <a th:href="@{/}">HOME</a>
+
+    <a th:href="@{aboutus}">ABOUT US</a>
+
+    <div class="mydropdown">
+        <button class="mydropbtn">PROJECTS
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="mydropdown-content">
+            <a th:href="@{projects/kanban}">KAN BAN pro</a>
+            <a th:href="@{projects/typepro}">TYPE PRO</a>
+            <a th:href="@{projects/pingpong}">PING PONG</a>
+        </div>
+    </div>
+
+    <a th:href="@{contact}">CONTACT US</a>
+
+
+    <div class="mydropdown">
+        <button class="mydropbtn">ACCOUNT
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="mydropdown-content">
+            <a sec:authorize="!isAuthenticated" th:href="@{userlogs/registration}">CREATE ACCOUNT</a>
+            <a sec:authorize="!isAuthenticated" th:href="@{userlogs/login}">LOGIN</a>
+            <a sec:authorize="isAuthenticated" th:href="@{/myprofile}">MY PROFILE</a>
+            <a sec:authorize="isAuthenticated" th:href="@{/logout}">LOGOUT</a>
+        </div>
+    </div>
+</div>
+
+
+<h2>Type Pro v 1.0</h2>
+<h3><br>Our projects within the framework
+    of data protection laws will soon be available for download on this website</h3>
+        <h3><br> <br>If you have any questions or opinions, you can click Contact Us and
+            reach out to us</h3>
+        <h4>We warmly welcome your ideas and opinions </h4>
+
+
+
+
+
+
+
+        <video src="/fotos/projects_images/typepro/TYPE%20PRO%201.0.mp4" style="width: 100%;align-items: center;text-align: center;display: flex;object-fit: cover;margin: auto;"controls>
+
+        </video>
+
+
+
+
+
+
+
+
+        <p class="newDimension">new dimension </p><br>
+        <p class="typePro">TYPE PRO v1.0 </p>
+        <br><br>
+        <div class="img1">
+            <img src="/fotos/projects_images/typepro/Foto1.png" class="img1" >
+        </div>
+        <p class="text1"><span class="text1Head">We hereby introduce Type Pro version one,</span><br>
+            complex texts with very complex words were integrated
+            To challenge the user's reaction speed, the app refers to advanced 10 fingers
+            System writers </p><br><br>
+
+        <div class="img2">
+            <img src="/fotos/projects_images/typepro/Foto2.png" class="img2"  >
+            <p class="text2">A friendly and beautiful graphical user interface
+                has been created, giving you a general overview of the app </p>
+        </div>
+
+        <P class="featuresHead">Important features</P>
+        <p class="featuresText">1.  Hundreds of very complex texts with complex words were integrated
+            <br>2. The lyrics are on different topics so you don't get bored with one.
+            <br>3. For those who want to write faster and faster and want to train this is the best choice.
+            <br>4. At the end it will automatically show how fast you wrote (words per minute).</p>
+
+        <div class="img3">
+            <img src="/fotos/projects_images/typepro/Foto3.png" class="img3" >
+        </div>
+        <p class="text1"><span class="text1Head">important to know,</span><br>
+            If you are a beginner and want to learn 10 Finger System from the beginning,
+            you will probably get bored with this app because Type Pro is not an education app
+            but a professional app for legendary 10 Finger System writers </p><br><br>
+
+        <div class="img4">
+
+            <p class="text4">Your result will be displayed exactly so that you can see more
+                precisely how far you have progressed. Quite elegantly, your result is
+                automatically output in the usual unit of words per minute. </p>
+            <img src="/fotos/projects_images/typepro/Foto4.png" class="img4" >
+        </div>
+        <div class="technicalfeaturescontainer">
+            <P class="technicalfeaturesHead">technical features</P>
+            <p class="technicalfeaturesText">1.  written with java 8
+                <br>2. completely object-oriented
+                <br>3. Swing technology has been integrated into the user interface
+                <br>4. installable on windows
+                <br>5. Can be used offline
+                <br>6. installable on windows 7/8/10/11</p></div>
+        <br>
+        <div class="footerContainer" style="margin-left: 0; margin-right: 0;bottom: 0px;margin-bottom: 0;padding-bottom: 0">
+            <footer class="footer">
+                <a th:href="@{contact}"> CONTACT</a>
+                <a th:href="@{/}"> PROJECTS</a>
+                <a th:href="@{impressum}"> IMPRESSUM</a>
+                <p class="rights">Copyright © 2024 MJ VISION all rights reserved.</p>
+            </footer>
+        </div>
+</body>
+</html>

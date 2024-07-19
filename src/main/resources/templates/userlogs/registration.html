@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAN BAN pro</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/index.css}">
+
+</head>
+<body>
+
+<div class="mynavbar">
+    <a th:href="@{/}">HOME</a>
+
+    <a th:href="@{aboutus}">ABOUT US</a>
+
+    <div class="mydropdown">
+        <button class="mydropbtn">PROJECTS
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="mydropdown-content">
+            <a th:href="@{projects/kanban}">KAN BAN pro</a>
+            <a th:href="@{projects/typepro}">TYPE PRO</a>
+            <a th:href="@{projects/pingpong}">PING PONG</a>
+        </div>
+    </div>
+
+    <a th:href="@{contact}">CONTACT US</a>
+
+
+    <div class="mydropdown">
+        <button class="mydropbtn">ACCOUNT
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="mydropdown-content">
+            <a sec:authorize="!isAuthenticated" th:href="@{userlogs/registration}">CREATE ACCOUNT</a>
+            <a sec:authorize="!isAuthenticated" th:href="@{userlogs/login}">LOGIN</a>
+            <a sec:authorize="isAuthenticated" th:href="@{/myprofile}">MY PROFILE</a>
+            <a sec:authorize="isAuthenticated" th:href="@{/logaut}">LOGOUT</a>
+        </div>
+    </div>
+</div>
+
+
+<br><br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<div style="padding-top: 1.5vw" class="container">
+    <div class = "row">
+        <div class = "col-md-6 col-md-offset-3">
+
+
+            <div class="alert alert-success " role="alert" th:if="${message != null}">
+                <span class="myalert">[[${message}]]</span>
+            </div>
+            <div class="alert alert-danger" role="alert" th:if="${param.error}">
+                <span class="myalert">This email is already registered. </span>
+            </div>
+            <h1 style="color: rgba(0,0,0,0.57)">Registration</h1>
+
+
+
+
+
+            <form th:action="@{/registration}" method="post" th:object="${user}">
+
+                <div class="form-group">
+                    <label style="color: rgba(0,0,0,0.57);font-family: Rights" for="firstName"> First Name </label>
+                    <input id="firstname" class="form-control" th:field="*{firstname}"
+                           required autofocus="autofocus" />
+                </div>
+
+                <div class="form-group">
+                    <label style="color: rgba(0,0,0,0.57);font-family: Rights" for="lastName"> Last Name </label> <input
+                        id="lastname" class="form-control" th:field="*{lastname}"
+                        required autofocus="autofocus" />
+                </div>
+
+                <div class="form-group">
+                    <label style="color: rgba(0,0,0,0.57);font-family: Rights" for="email"> Email </label> <input
+                        id="email" class="form-control" th:field="*{email}" required
+                        autofocus="autofocus" />
+                </div>
+
+                <div class="form-group">
+                    <label style="color: rgba(0,0,0,0.57);font-family: Rights" for="password"> Password </label> <input
+                        id="password" class="form-control" type="password"
+                        th:field="*{password}" required autofocus="autofocus" />
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success" style="background-color: rgba(0,0,0,0.47) ;border-color: rgba(255,255,255,0.42)">Register</button>
+                    <span style="color: rgba(0,0,0,0.57);font-family: Rights" >Already registered? <a href="/" th:href="@{/login}">Login
+								here</a></span>
+                </div>
+            </form>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
+<div class="footerContainer" style="margin-left: 0; margin-right: 0;bottom: 0px;margin-bottom: 0;padding-bottom: 0">
+    <footer class="footer">
+        <a th:href="@{contact}"> CONTACT</a>
+        <a th:href="@{/}"> PROJECTS</a>
+        <a th:href="@{impressum}"> IMPRESSUM</a>
+        <p class="rights">Copyright © 2024 MJ VISION all rights reserved.</p>
+    </footer>
+</div>
+</body>
+</html>

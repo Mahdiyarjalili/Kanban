@@ -1,0 +1,603 @@
+body {
+    background-image: url("viewfotos/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: auto;
+    font-size: 1vw;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    background-color: #d41e3600
+}
+
+body {
+    font-size: 1.5vw;
+}
+@font-face {
+    font-family: Cinzel-SemiBold;
+    src: url('fonts/Cinzel-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('fonts/Lato-Hairline.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url('fonts/Gilroy-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Rights;
+    src: url('fonts/Cabin-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}@font-face {
+    font-family: myfont;
+    src: url('fonts/Cinzel-Regular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+.logo {
+    width: 20vh;
+    margin: auto;
+    margin-top: 38vh;
+    margin-bottom: 5vh;
+    display: block;
+    opacity: 0.5;
+    transition: 1s;
+
+}
+
+.logo:hover {
+    height: auto;
+    display: block;
+    text-align: center;
+    opacity: 1;
+
+}
+.myalert
+{
+    font-size: 1.3vw;
+}
+/* Navbar container */
+.mynavbar {
+    overflow: hidden;
+    background-color: #333333a5;
+    font-family: Arial;
+    display: flex;
+    justify-content: center; /* Horizontal zentrieren */
+    transition: ease-in-out 1s;
+
+}
+
+/* Links inside the navbar */
+.mynavbar a {
+
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.734);
+    font-family: Rights;
+    text-align: center;
+    padding: 30px 3vw;
+    text-decoration: none;
+    opacity: .65;
+    transition: all 1s;
+}
+
+/* The dropdown container */
+.mydropdown {
+
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.mydropdown .mydropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.734);
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+    padding: 30px 2vw;
+    text-decoration: none;
+
+    transition: all 1s;
+    opacity: .65;
+    text-align: center;
+    justify-content: center; /* Hier zentrierst du die Elemente horizontal */
+    align-items: center;
+
+}
+
+/* Add a red background color to navbar links on hover */
+.mynavbar a:hover, .mydropdown:hover .mydropbtn {
+    background-color: rgba(255, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    opacity: 1;
+
+}
+
+/* Dropdown content (hidden by default) */
+.mydropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ff000000;
+    min-width: 160px;
+    text-align: center;
+    justify-content: center; /* Hier zentrierst du die Elemente horizontal */
+    align-items: center;
+    z-index: 1;
+
+}
+
+/* Links inside the dropdown */
+.mydropdown-content a {
+    float: none;
+    color: rgba(0, 0, 0, 0.352);
+    background-color: transparent;
+    padding: 12px 14px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition:ease-in-out 0.3s ;
+
+    opacity: .7;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.mydropdown-content a:hover {
+    background-color: transparent;
+    color: #000000;
+
+}
+
+/* Show the dropdown menu on hover */
+.mydropdown:hover .mydropdown-content {
+    display: block;
+}
+.footer
+{
+    text-align: center;
+    align-items: center;
+    margin: auto auto;
+    margin-top: 4vw;
+}
+.footerContainer
+{
+    background-color: #00000063;
+    width: 100%;
+    bottom:0;
+    left: 0;
+    align-items: center;
+    display: flex;
+    position: relative;
+    text-align: center;
+    margin-top: 10vw;
+}
+
+footer a {
+    font-size:1.1vw;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 1.5s;
+    padding: 0vw 5vw;
+    font-family:Rights;
+    opacity: .65;
+
+}
+
+footer a:hover {
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: aliceblue;
+    opacity: 1;
+
+
+}
+
+.rights {
+    color: rgba(221, 221, 221, 0.849);
+    font-family:Rights;
+    font-size: 1.1vw;
+    opacity: .7;
+    transition: all 1.5s;
+    margin-top: 3.8vw;
+}
+
+.rights:hover {
+    color: rgba(255, 255, 255, 0.767);
+    font-family: Rights;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/*1024
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+*/
+
+
+
+@media screen and (max-width: 1300px) {
+    body {
+        font-size: 1.5vw;
+    }
+
+    .logo {
+        width: 20vh;
+        margin: auto;
+        margin-top: 38vh;
+        margin-bottom: 5vh;
+        display: block;
+        opacity: 0.5;
+        transition: 1s;
+
+    }
+
+    .logo:hover {
+        height: auto;
+        display: block;
+        text-align: center;
+        opacity: 1;
+
+    }
+
+    .mynavbar {
+        overflow: hidden;
+        background-color: #333333a5;
+        font-family: Arial;
+        display: flex;
+        justify-content: center; /* Horizontal zentrieren */
+        align-items: center;
+        transition: ease-in-out 1s;
+
+    }
+    .myalert
+    {
+        font-size: 2vw;
+    }
+
+    /* Links inside the navbar */
+    .mynavbar a {
+        float: left;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.734);
+        font-family: Rights;
+        text-align: center;
+        padding: 30px 1.5vw;
+        text-decoration: none;
+        opacity: .65;
+        transition: all 1s;
+    }
+
+    /* The dropdown container */
+    .mydropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    /* Dropdown button */
+    .mydropdown .mydropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+        padding: 30px 1.5vw;
+        text-decoration: none;
+        opacity: .65;
+        transition: all 1s;
+    }
+
+    /* Add a red background color to navbar links on hover */
+    .mynavbar a:hover, .mydropdown:hover .mydropbtn {
+        background-color: rgba(255, 0, 0, 0);
+        opacity: .8;
+        color: #f9f9f9;
+
+    }
+
+    /* Dropdown content (hidden by default) */
+    .mydropdown-content {
+        display: none;
+        position: absolute;
+        background-color: transparent;
+        min-width: 160px;
+        box-shadow: transparent;
+        z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .mydropdown-content a {
+        float: none;
+        color: black;
+        background-color: rgba(255, 255, 255, 0);
+        padding: 12px 14px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        transition: all .6s;
+        opacity: .5;
+    }
+
+    /* Add a grey background color to dropdown links on hover */
+    .mydropdown-content a:hover {
+        background-color: #00000000;
+        opacity: 1;
+        color: #000000;
+    }
+
+    /* Show the dropdown menu on hover */
+    .mydropdown:hover .mydropdown-content {
+        display: block;
+    }
+    .footer
+    {
+        text-align: center;
+        align-items: center;
+        margin: auto auto;
+        margin-top: 5vw;
+    }
+    .footerContainer
+    {
+        background-color: #00000063;
+        width: 100%;
+        bottom:0;
+        left: 0;
+        align-items: center;
+        display: flex;
+        position: fixed;
+        text-align: center;
+        margin-top: 10vw;
+    }
+
+    footer a {
+        font-size:1.5vw;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        transition: all 1.5s;
+        padding: 0vw 5vw;
+        font-family:Rights;
+        opacity: .65;
+
+    }
+
+    footer a:hover {
+        font-size: 1.6vw;
+        text-decoration: none;
+        color: aliceblue;
+        opacity: 1;
+
+
+    }
+
+    .rights {
+        color: rgba(221, 221, 221, 0.849);
+        font-family:Rights;
+        font-size: 1.7vw;
+        opacity: .7;
+        transition: all 1.5s;
+        margin-top: 5vw;
+    }
+
+    .rights:hover {
+        color: rgba(255, 255, 255, 0.767);
+        font-family: Rights;
+        opacity: 1;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+/*767
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+*/
+
+
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 1.5vw;
+    }
+
+    .logo {
+        width: 20vh;
+        margin: auto;
+        margin-top: 25vh;
+        margin-bottom: 2vh;
+        display: block;
+        opacity: 0.5;
+        transition: 1s;
+
+    }
+
+    .logo:hover {
+        height: auto;
+        display: block;
+        text-align: center;
+        opacity: 1;
+
+    }
+    .myalert
+    {
+        font-size: 3vw;
+    }
+
+    .mynavbar {
+        overflow: hidden;
+        background-color: #333333a5;
+        font-family: Arial;
+        display: flex;
+        justify-content: center; /* Horizontal zentrieren */
+        align-items: center;
+
+    }
+
+    /* Links inside the navbar */
+    .mynavbar a {
+        float: left;
+        font-size: 10px;
+        color: white;
+        font-family: Rights;
+        text-align: center;
+        padding: 18px 2vw;
+        text-decoration: none;
+    }
+
+    /* The dropdown container */
+    .mydropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    /* Dropdown button */
+    .mydropdown .mydropbtn {
+        font-size: 10px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 18px 2vw;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+    }
+
+    /* Add a red background color to navbar links on hover */
+    .mynavbar a:hover, .mydropdown:hover .mydropbtn {
+        background-color: transparent;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .mydropdown-content {
+        display: none;
+        position: absolute;
+        background-color:transparent;
+        min-width: 160px;
+        box-shadow: transparent;
+        z-index: 1;
+        transition: all 1s;
+        opacity: .6;
+    }
+
+    /* Links inside the dropdown */
+    .mydropdown-content a {
+        font-size: 11px;
+
+        float: none;
+        color: black;
+        padding: 12px 14px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    /* Add a grey background color to dropdown links on hover */
+    .mydropdown-content a:hover {
+        background-color: #dddddd00;
+        opacity: 1;
+    }
+
+    /* Show the dropdown menu on hover */
+    .mydropdown:hover .mydropdown-content {
+        display: block;
+    }
+
+    .footer
+    {
+        text-align: center;
+        align-items: center;
+        margin: auto auto;
+        margin-top: 7vw;
+    }
+    .footerContainer
+    {
+        background-color: #00000063;
+        width: 100%;
+        bottom:0;
+        left: 0;
+        align-items: center;
+
+        display: flex;
+        position: fixed;
+        text-align: center;
+        margin-top: 10vw;
+
+    }
+
+    footer a {
+        font-size:2.6vw;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        transition: all 1.5s;
+        padding: 0vw 5vw;
+        font-family:Rights;
+        opacity: .65;
+
+    }
+
+    footer a:hover {
+        font-size: 1.3vw;
+        text-decoration: none;
+        color: aliceblue;
+        opacity: 1;
+
+
+    }
+
+    .rights {
+        color: rgba(221, 221, 221, 0.849);
+        font-family:Rights;
+        font-size: 2.5vw;
+        opacity: .7;
+        transition: all 1.5s;
+        margin-top: 3.8vw;
+    }
+
+    .rights:hover {
+        color: rgba(255, 255, 255, 0.767);
+        font-family: Rights;
+        opacity: 1;
+    }
+
+
+
+}
+
+
+

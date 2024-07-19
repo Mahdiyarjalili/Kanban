@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAN BAN pro</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/index.css}">
+
+</head>
+<body>
+
+<div class="mynavbar">
+    <a th:href="@{/}">HOME</a>
+
+    <a th:href="@{aboutus}">ABOUT US</a>
+
+    <div class="mydropdown">
+        <button class="mydropbtn">PROJECTS
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="mydropdown-content">
+            <a th:href="@{projects/kanban}">KAN BAN pro</a>
+            <a th:href="@{projects/typepro}">TYPE PRO</a>
+            <a th:href="@{projects/pingpong}">PING PONG</a>
+        </div>
+    </div>
+
+    <a th:href="@{contact}">CONTACT US</a>
+
+
+    <div class="mydropdown">
+        <button class="mydropbtn">ACCOUNT
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="mydropdown-content">
+            <a sec:authorize="!isAuthenticated" th:href="@{userlogs/registration}">CREATE ACCOUNT</a>
+            <a sec:authorize="!isAuthenticated" th:href="@{userlogs/login}">LOGIN</a>
+            <a sec:authorize="isAuthenticated" th:href="@{/myprofile}">MY PROFILE</a>
+            <a sec:authorize="isAuthenticated" th:href="@{/logaut}">LOGOUT</a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h1>ToDo Management System</h1>
+    <hr>
+    <h2>Save ToDo</h2>
+<form  th:action="@{/saveToDo}" th:object="${toDoEntity}"
+      method="POST">
+
+    <div class="form-group">
+        <label class="control-label" for="todoName"> Subject </label>
+        <input id="todoName" class="form-control" th:field="*{todoName}"
+               />
+    </div>
+
+    <div class="form-group">
+        <label class="control-label" for="todo"> Description </label>
+        <input id="todo" class="form-control" th:field="*{todo}"
+               required  placeholder="required"/>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label" for="currentdate"> Current Date </label>
+        <input id="currentdate" class="form-control" type="date" th:field="*{currentdate}"
+               required  placeholder="required" />
+    </div>
+
+    <div class="form-group">
+        <label class="control-label" for="deadline"> Deadline </label>
+        <input id="deadline" class="form-control" type="date" th:field="*{deadline}"
+               required placeholder="required" />
+    </div>
+    <div class="form-group" style=" text-align: center; margin:0 auto;">
+        <label class="control-label" for="status"> status </label>
+        <input id="status" class="form-control" type="checkbox" th:value="yes" th:field="*{status}"
+         />
+    </div>
+
+    <div class = "box-footer">
+        <button type="submit" class = "btn btn-primary">
+            Submit
+        </button>
+    </div>
+</form>
+</div>
+<div class="footerContainer" style="margin-left: 0; margin-right: 0;bottom: 0px;margin-bottom: 0;padding-bottom: 0">
+    <footer class="footer">
+        <a th:href="@{contact}"> CONTACT</a>
+        <a th:href="@{/}"> PROJECTS</a>
+        <a th:href="@{impressum}"> IMPRESSUM</a>
+        <p class="rights">Copyright © 2024 MJ VISION all rights reserved.</p>
+    </footer>
+</div>
+</body>
+</html>

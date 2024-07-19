@@ -1,0 +1,169 @@
+
+
+@font-face {
+    font-family: Cinzel-SemiBold;
+    src: url('fonts/Cinzel-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('fonts/Lato-Hairline.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url('fonts/Gilroy-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Rights;
+    src: url('fonts/Cabin-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}@font-face {
+    font-family: myfont;
+    src: url('fonts/Cinzel-Regular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+h1{
+    margin: auto 80px;
+    font-size: 2vw;
+    font-family: Rights;
+    line-height: 65px;
+    margin-bottom:5vw;
+}
+.contactContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logoMedienPic
+{
+    width: 4.5vw;
+    transition: 1s;
+}
+.logoMedienPic:hover
+{
+    width: 5vw;
+}
+.logoMedienLinks
+{
+    text-decoration: none;
+    align-items: center;
+    color: #00000091;
+    font-size: 1.2vw;
+
+
+}
+.logoMedienLinks:hover
+{
+    text-decoration: none;
+    align-items: center;
+    color: #00000091;
+
+}
+.button
+{
+    background-color: rgba(0, 0, 0, 0.502);
+    font-size: 25px;
+    font-family: Rights;
+    padding: 15px 100px;
+    text-align: center;
+    margin-bottom: 400px;
+    transition: all .6s;
+    border-color: rgb(0, 0, 0);
+}
+.button:hover
+{
+    background-color: rgba(0, 0, 0, 0.824);
+}
+
+.medienContainer
+{
+    text-align: center;
+    margin: 2vw;
+    font-family:Gilroy ;
+}
+.contactlbl
+{
+    font-size: 2vw;
+}
+@media screen and (max-width: 1000px)
+{
+    h1{
+        margin: auto 40px;
+        font-size: 4vw;
+        font-family: Rights;
+        line-height: 30px;
+        margin-bottom:5vw;
+    }
+
+    .contactContainer
+    {
+        display:block;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .logoMedienPic
+    {
+        width: 45vw;
+        transition: 1s ;
+    }
+    .logoMedienPic:hover
+    {
+        width: 50vw;
+    }
+    .logoMedienLinks
+    {
+        text-decoration: none;
+        align-items: center;
+        color: #00000091;
+        font-size: 4.5vw;
+        color: #414141ee;
+    }
+    .medienContainer
+    {
+        text-align: center;
+        margin: 20vw;
+        font-family:Gilroy ;
+    }
+
+    .logoMedienLinks:hover
+    {
+        text-decoration: none;
+        align-items: center;
+        color: #00000091;
+
+    }
+    .button
+    {
+        background-color: rgba(0, 0, 0, 0.502);
+        font-size: 25px;
+        font-family: Rights;
+        padding: 15px 80px;
+        text-align: center;
+        margin-bottom: 500px;
+        transition: all .6s;
+        border-color: rgb(0, 0, 0);
+    }
+    .button:hover
+    {
+        background-color: rgba(0, 0, 0, 0.824);
+    }
+    .contactlbl
+    {
+        font-size: 4vw;
+    }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAN BAN pro</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/index.css}">
+    <link rel="stylesheet" th:href="@{/contactus.css}">
+
+
+
+</head>
+<body>
+
+<div class="mynavbar">
+    <a th:href="@{/}">HOME</a>
+
+    <a th:href="@{aboutus}">ABOUT US</a>
+
+    <div class="mydropdown">
+        <button class="mydropbtn">PROJECTS
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="mydropdown-content">
+            <a th:href="@{projects/kanban}">KAN BAN pro</a>
+            <a th:href="@{projects/typepro}">TYPE PRO</a>
+            <a th:href="@{projects/pingpong}">PING PONG</a>
+        </div>
+    </div>
+
+    <a th:href="@{contact}">CONTACT US</a>
+
+
+    <div class="mydropdown">
+        <button class="mydropbtn">ACCOUNT
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="mydropdown-content">
+            <a sec:authorize="!isAuthenticated" th:href="@{userlogs/registration}">CREATE ACCOUNT</a>
+            <a sec:authorize="!isAuthenticated" th:href="@{userlogs/login}">LOGIN</a>
+            <a sec:authorize="isAuthenticated" th:href="@{/myprofile}">MY PROFILE</a>
+            <a sec:authorize="isAuthenticated" th:href="@{/logaut}">LOGOUT</a>
+        </div>
+    </div>
+</div>
+
+
+<h1> <br>If you have any questions or opinions, you can click Contact Us and
+    reach out to us
+
+    We warmly welcome your ideas and opinions Below you can see our contact details
+
+    You can reach us in different ways.</h1>
+
+<div class="contactContainer" style="margin-bottom: 4vw;" >
+
+
+
+    <div class="medienContainer">
+
+        <a href="https://www.instagram.com/mj.apps/" class="logoMedienLinks"><div class="logo-container">
+            <img src="/viewfotos/Instagram.png" alt="Logo" class="logoMedienPic">
+        </div>MJ VISION </a>
+    </div>
+
+
+
+
+
+    <div class="medienContainer">
+        <a href="https://telegram.me/mahdiyarjalili" class="logoMedienLinks">
+            <div class="logo-container">
+                <img src="/viewfotos/Telegram.png" alt="Logo" class="logoMedienPic">
+            </div>Mahdiyar Jalili</a>
+    </div>
+
+
+
+
+    <div class="medienContainer">
+        <a href="https://wa.me/+4917642989531" class="logoMedienLinks">
+            <div class="logo-container">
+                <img src="/viewfotos/Whatsapp.png" alt="Logo" class="logoMedienPic">
+            </div>
+            Mahdiyar Jalili Whatsapp </a>
+    </div>
+
+
+
+    <div class="medienContainer">
+        <div class="logo-container">
+            <img src="/viewfotos/Phone.png" alt="Logo" class="logoMedienPic">
+        </div>
+        <a style="color: #00000091;" class="logoMedienLinks">
+            (+49) 176 429 895 31</a>
+    </div>
+
+
+
+    <div class="medienContainer">
+        <a href="mailto:jalilimahdiyar@gmail.com" class="logoMedienLinks">
+            <div class="logo-container">
+                <img src="/viewfotos/Email.png" alt="Logo" class="logoMedienPic">
+            </div>MJ Production E-mail</a>
+    </div>
+
+
+
+
+
+    <div class="medienContainer">
+        <a href="https://www.instagram.com/jemahdiyar/" class="logoMedienLinks">
+            <div class="logo-container">
+                <img src="/viewfotos/Instagram.png" alt="Logo" class="logoMedienPic">
+            </div>Mahdiyar Jalili</a>
+    </div>
+
+
+</div>
+
+
+<div style="text-align: center;">
+    <a class="btn btn-success button" th:href="@{showcontactform}">Contact Form</a>
+</div>
+
+
+
+        <div class="footerContainer" style="margin-left: 0; margin-right: 0;bottom: 0px;margin-bottom: 0;padding-bottom: 0">
+    <footer class="footer">
+        <a th:href="@{contact}"> CONTACT</a>
+        <a th:href="@{/}"> PROJECTS</a>
+        <a th:href="@{impressum}"> IMPRESSUM</a>
+        <p class="rights">Copyright © 2024 MJ VISION all rights reserved.</p>
+    </footer>
+</div>
+</body>
+</html>

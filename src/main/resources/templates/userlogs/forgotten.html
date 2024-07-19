@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <link rel="stylesheet"  th:href="@{/index.css}">
+</head>
+<body>
+
+<div class="menudiv">
+    <ul>
+        <li><a href="index.html">home page</a></li>
+        <li><a href="aboutUs.html">about us</a></li>
+        <li><a href="projects.html">projects</a>
+
+            <ul>
+                <li><a href="typePro.html"> &nbsp Type Pro</a></li>
+                <li><a href="pingpong.html">Ping Pong</a></li>
+
+            </ul>
+
+
+        </li>
+        <li><a href="contact.html">contact</a></li>
+    </ul>
+</div>
+<br><br>
+
+<h2 style="color: #c8c8c8; padding-top: 13vw;text-align: center"  >Change password</h2>
+
+<div style=" align-items: center;" class = "container">
+    <div class = "row">
+        <div class = "col-md-6 col-md-offset-3">
+
+            <div style="text-align: center" class="message" th:if="${param.error}">
+                <span style="font-size: 2vw; color: #d41e37"> Invalid Username or Password </span>
+            </div>
+
+            <div style="text-align: center" class="message" th:if="${param.logout}">
+                <span style="font-size: 2vw; color: rgba(0,129,10,0.91)" >Logout Successfuly</span>
+            </div>
+
+
+            <form th:action="@{/login}" method="post">
+                <div class="form-group col-md-6 col-md-offset-2">
+                    <label style="color: #c8c8c8 " for="username"> Username </label> :
+                    <input type="text" class="form-control" id="username" name="username"
+                           placeholder="Please enter Email"  style="width: 250px">
+                </div>
+
+                <div class="form-group col-md-6 col-md-offset-2" >
+                    <label style="color: #c8c8c8" for="password">Password</label>:
+                    <input type="password"
+                           id="password" name="password" class="form-control"
+                           placeholder="Please enter Password" style=" width: 250px"/>
+                </div>
+
+                <div class="form-group col-md-6 col-md-offset-2">
+                    <button type="submit" class="btn btn-success" style="background-color: #ff2e2e25 ;border-color: #ff2e2e25">Register</button>
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
+</div>
+<div><span sec:authorize="!isAuthenticated"><a href="login.html"></a></span></div>
+
+
+
+
+<div class="footerContainer" style="margin-left: 0; margin-right: 0; ">
+    <footer class="footer">
+        <a href="contact.html"> Contact</a>
+        <a href="projects.html"> Projects</a>
+        <a href="impressum.html"> Impressum</a>
+        <p class="rights">Copyright © 2024 MJ Production all rights reserved.</p>
+    </footer>
+</div>
+</body>
+</html>

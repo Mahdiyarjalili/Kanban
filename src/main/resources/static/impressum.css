@@ -1,0 +1,325 @@
+h1{
+    font-family:Lato-Hairline ; font-weight:600;
+    opacity: .8;
+    font-size: 7em;
+    text-align: center;
+    display: block;
+}
+h2{
+    font-family:Lato-Hairline ; font-weight:600;
+    opacity: .8;
+    font-size: 70px;
+    margin: 0 10vw;
+    text-align: center;
+    display: block;
+    margin-top: 130px;
+}
+h3{
+    font-family:Lato-Hairline ; font-weight:600;
+    opacity: .8;
+    font-size: 50px;
+    text-align: center;
+    display: block;
+
+}
+h4{
+    font-family:Lato-Hairline ; font-weight:600;
+    opacity: .8;
+    font-size: 50px;
+    text-align: center;
+    display: block;
+    padding-bottom:5vh;
+
+}
+h5{
+    font-family:Lato-Hairline ; font-weight:600;
+    opacity: .8;
+    font-size: 7em;
+    text-align: center;
+    display: block;
+}
+
+.newDimension
+{
+    text-align: center ;
+    font-size: 80px;
+    font-family: Lato-Hairline;
+    margin :0;
+    padding-top: 5vh;
+}
+
+
+.typePro
+{
+    text-align: center ; font-size: 5vw;font-family: Lato-Hairline;margin :0px;
+}
+
+.img1
+{
+
+    text-align: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.text1Head
+{
+    text-align: left ;
+    font-size: 3vw;
+
+}
+.text1
+{
+    text-align: left ;
+    font-size: 2vw;
+    font-family: Gilroy;
+    margin :0;
+    padding-top: 5vw;
+    margin: 0px 6vw;
+
+}
+.img2
+{
+    padding-top: 10vh;
+
+    text-align: center;
+    align-items: center;
+    width: 99%;
+    margin: 0 auto;
+    display: flex;
+}
+.text2
+{
+    text-align: left ;
+    font-size: 2vw;
+    font-family: Gilroy;
+    margin :0;
+    padding-top:0vh;
+    margin: 0px 2vw;
+
+}
+.featuresHead
+{
+    font-family: Gilroy;
+    font-size: 3vw;
+    padding-top: 5vw;
+    margin: 0px 6vw;
+
+}
+.featuresText
+{
+    text-align: left ;
+    font-size: 2vw;
+    font-family: Gilroy;
+    margin :0;
+    padding-top: 1vw;
+    margin: 0px 6vw;
+    line-height: 3vw;
+}
+.img3
+{
+    padding-top: 10vh;
+
+    text-align: center;
+    align-items: center;
+    width: 89%;
+    margin: 0 auto;
+    display: flex;
+}
+.img4
+{
+    padding-top: 10vh;
+
+    text-align: center;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+}
+.text4
+{
+    text-align: right ;
+    font-size: 1.95vw;
+    font-family: Gilroy;
+    margin :0;
+    padding-top:8vh;
+    margin: 0px 0vw;
+
+}
+
+
+
+
+
+@font-face {
+    font-family: 'Cinzel-SemiBold';
+    src: url('fonts/Cinzel-SemiBold.ttf') format('truetype');
+
+    /* Füge hier weitere Formate hinzu, falls vorhanden */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato-Hairline';
+    src: url('fonts/Lato-Hairline.ttf') format('truetype');
+
+    /* Füge hier weitere Formate hinzu, falls vorhanden */
+    font-weight:100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Light.ttf') format('truetype');
+
+    /* Füge hier weitere Formate hinzu, falls vorhanden */
+    font-weight:100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rights';
+    src: url('fonts/Cabin-VariableFont_wdth,wght.ttf') format('truetype');
+
+    /* Füge hier weitere Formate hinzu, falls vorhanden */
+    font-weight:100;
+    font-style: normal;
+}
+
+body
+{
+    overflow:hidden;
+    font-size: 1vw;
+}
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.fade-in.active {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 1.5vw;
+    }
+
+
+
+    h1{
+        font-family:Lato-Hairline ; font-weight:600;
+        opacity: .8;
+        font-size: 6vw;
+        text-align: center;
+        display: block;
+        margin-top: 10vh;
+    }
+    h2{
+        font-family:Lato-Hairline ;
+        font-weight:600;
+        opacity: .8;
+        margin: 0 5vw;
+        font-size:5vw;
+        text-align: center;
+        display: block;
+        margin-top: 50PX;
+
+    }
+    h3{
+        font-family:Lato-Hairline ; font-weight:600;
+        opacity: .8;
+        font-size: 4vw;
+        text-align: center;
+        display: block;
+        margin: auto 4VW;
+
+    }
+    h4{
+        font-family:Lato-Hairline ; font-weight:600;
+        opacity: .8;
+        font-size: 4vw;
+        text-align: center;
+        display: block;
+        padding-bottom: 6vh;
+
+    }
+    h5{
+        font-family:Lato-Hairline ;
+        opacity: .8;
+        font-size: 10vw;
+        text-align: center;
+        display: block;
+        margin-top: 5vh;
+    }
+
+    body::-webkit-scrollbar {
+        display:flex;
+        background-color: #d3010100
+    }
+    html, body
+    {
+        overflow:auto;
+        font-size: 1vw;
+    }
+
+
+
+    .text1Head
+    {
+        text-align: left ;
+        font-size: 3.5vw;
+
+    }
+    .text1
+    {
+        text-align: left ;
+        font-size: 14px;
+        font-family: Gilroy;
+        margin :0;
+        padding-top: 8vw;
+        margin: 0px 8vw;
+
+    }
+}
+
+body
+{
+    overflow:auto;
+    font-size: 1vw;
+}
+body::-webkit-scrollbar {
+    display:none;
+    background-color: #d3010100
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
